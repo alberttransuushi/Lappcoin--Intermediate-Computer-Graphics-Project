@@ -10,3 +10,5 @@ https://trello.com/invite/b/Lfcyvk8e/ATTI07d088697d779a1453a52cd81f4de9294873CCF
 Bios:
 
 Albert Tran: Game developer at OTU, likes FFXIV and sushi a lot
+
+Ryan Ho: Also a game developer at OTU, likes Tetris, Arknights, and also sushi
