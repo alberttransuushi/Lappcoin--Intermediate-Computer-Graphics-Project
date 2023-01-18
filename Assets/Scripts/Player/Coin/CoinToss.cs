@@ -14,6 +14,7 @@ public class CoinToss : MonoBehaviour
 
   bool coinCharging;
   float coinCharge;
+  public float minCharge;
   public float maxCharge;
 
   Transform cameraTransform;
@@ -34,7 +35,7 @@ public class CoinToss : MonoBehaviour
       //Vector3 temp = new Vector3(coinHolder.transform.localPosition.x, -0.5f - ((coinCharge / maxCharge) / 10), coinHolder.transform.localPosition.y);
       //coinHolder.transform.localPosition = temp;
     } else if (coinCharging) {
-      Toss(coinCharge);
+      Toss(coinCharge + minCharge);
       coinCharging = false;
       coinCharge = 0;
       //coinHolder.transform.localPosition = new Vector3(coinHolder.transform.localPosition.x, -0.5f, coinHolder.transform.localPosition.y);
@@ -45,7 +46,7 @@ public class CoinToss : MonoBehaviour
     coinRB.freezeRotation = false;
     coinRB.constraints = 0;
     Vector3 dir = coinTarget.transform.position - cameraTransform.position;
-    coinRB.AddForce(dir.normalized * coinCharge * baseCoinForce);
+    coinRB.AddForce(dir.normalized * power * baseCoinForce);
     coin.gameObject.GetComponent<MeshCollider>().enabled = true;
     coin.gameObject.GetComponent<CoinSpin>().enabled = true;
     coin = Instantiate(queue.NewCoin(), coinHolder.transform);

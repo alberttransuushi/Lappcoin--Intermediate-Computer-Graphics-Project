@@ -7,11 +7,12 @@ public class CoinSpin : MonoBehaviour
   Rigidbody rb;
   Vector3 spin;
   [SerializeField] float rpm;
+  [SerializeField] float variation;
 
   bool spinning = true;
   void Start() {
     rb = GetComponent<Rigidbody>();
-    spin = new Vector3(rpm, 0, 0);
+    spin = new Vector3(Random.Range(rpm - variation, rpm + variation), 0, 0);
   }
 
   void FixedUpdate() {
