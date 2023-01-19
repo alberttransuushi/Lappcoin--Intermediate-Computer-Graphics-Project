@@ -1130,7 +1130,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   coinTarget: {fileID: 969990198}
   baseCoinForce: 1500
-  minCharge: 1
+  minCharge: 0.2
   maxCharge: 2
 --- !u!114 &2120833610
 MonoBehaviour:
@@ -1167,6 +1167,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 496788c33fc21a84a8be93a2b812513f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gunTip: {fileID: 476070981}
+  laserMaterial: {fileID: 10308, guid: 0000000000000000f000000000000000, type: 0}
 --- !u!4 &1187699838334182212
 Transform:
   m_ObjectHideFlags: 0
