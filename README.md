@@ -5,7 +5,7 @@ Pitch Video found within Assets/Pitch
 
 Slides and Pitch Script found within Assets/Slides and Script
 
-https://trello.com/invite/b/Lfcyvk8e/ATTI07d088697d779a1453a52cd81f4de9294873CCFA/lappcoin-intermidiate-computer-graphics-project
+https://trello.com/invite/b/Lfcyvk8e/ATTIccf9c7912cc98a12129f9efcdd23b68893172BAD/lappcoin-intermidiate-computer-graphics-project
 
 Bios:
 
