@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 3160240549750882104}
   - component: {fileID: 2333494185044546002}
   - component: {fileID: 8799550325732446608}
+  - component: {fileID: -5887017906813910761}
   m_Layer: 0
   m_Name: LappCoin Yellow_Lightning
   m_TagString: Coin
@@ -129,3 +130,21 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 1
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &-5887017906813910761
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8043822525059221740}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 85e2c805fe8f19b4f90e6bda3ce79671, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 0
+  damageScale: 0
+  lightning: {fileID: 6327672462432085933, guid: f951c3b78fcb0ea45b17c6af18f4af1d, type: 3}
+  layermask:
+    serializedVersion: 2
+    m_Bits: 256
