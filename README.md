@@ -13,7 +13,7 @@ Albert Tran: Game developer at OTU, likes FFXIV and sushi a lot
 
 Ryan Ho: Also a game developer at OTU, likes Tetris, Arknights, and also sushi
 
-
+![](https://github.com/alberttransuushi/Lappcoin--Intermediate-Computer-Graphics-Project/blob/main/gottabreakitdowntotakecontrolimgoingtodowhatittakesdowhatittakes.gif)
 
 
 
