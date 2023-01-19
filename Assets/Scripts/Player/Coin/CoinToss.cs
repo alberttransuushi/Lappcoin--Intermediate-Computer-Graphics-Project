@@ -22,7 +22,7 @@ public class CoinToss : MonoBehaviour
     cameraTransform = Camera.main.transform;
     queue = GetComponent<CoinBag>();
     coinHolder = transform.GetChild(0).transform.GetChild(0).transform.gameObject;
-    coin = transform.GetChild(0).transform.GetChild(0).transform.GetChild(0).transform.gameObject;
+    coin = Instantiate(queue.NewCoin(), coinHolder.transform);
     coinRB = coin.transform.GetComponent<Rigidbody>();
   }
   private void Update() {
