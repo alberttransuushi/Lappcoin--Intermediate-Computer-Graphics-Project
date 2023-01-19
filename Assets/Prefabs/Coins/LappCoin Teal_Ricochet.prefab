@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &7457789040453813283
+--- !u!1 &3447415420596926888
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,26 +8,26 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 2748669810736114201}
-  - component: {fileID: 2719009984510290340}
-  - component: {fileID: 4951149645808691763}
-  - component: {fileID: 2851796871404545978}
-  - component: {fileID: 6287873234249945165}
-  - component: {fileID: 7205284255240845992}
+  - component: {fileID: 4101353455347332277}
+  - component: {fileID: 5654584776273052155}
+  - component: {fileID: 7055693705474008414}
+  - component: {fileID: 6391811127332949294}
+  - component: {fileID: 1224912683332862996}
+  - component: {fileID: -2448014667944513354}
   m_Layer: 0
-  m_Name: LappCoin Gold_Reload
-  m_TagString: Untagged
+  m_Name: LappCoin Teal_Ricochet
+  m_TagString: Coin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &2748669810736114201
+--- !u!4 &4101353455347332277
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7457789040453813283}
+  m_GameObject: {fileID: 3447415420596926888}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
@@ -36,21 +36,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!33 &2719009984510290340
+--- !u!33 &5654584776273052155
 MeshFilter:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7457789040453813283}
+  m_GameObject: {fileID: 3447415420596926888}
   m_Mesh: {fileID: -2432090755550338912, guid: d936b5448ffadc34c8d3b600a74497b2, type: 3}
---- !u!23 &4951149645808691763
+--- !u!23 &7055693705474008414
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7457789040453813283}
+  m_GameObject: {fileID: 3447415420596926888}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -64,7 +64,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 1820c7164e0bff5489251fb514d89613, type: 2}
+  - {fileID: 2100000, guid: 2419b779fad7e334eab34e6fb8a74594, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -86,13 +86,13 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!54 &2851796871404545978
+--- !u!54 &6391811127332949294
 Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7457789040453813283}
+  m_GameObject: {fileID: 3447415420596926888}
   serializedVersion: 2
   m_Mass: 1
   m_Drag: 0
@@ -102,27 +102,13 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 14
   m_CollisionDetection: 0
---- !u!64 &6287873234249945165
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7457789040453813283}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -2432090755550338912, guid: d936b5448ffadc34c8d3b600a74497b2, type: 3}
---- !u!114 &7205284255240845992
+--- !u!114 &1224912683332862996
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7457789040453813283}
+  m_GameObject: {fileID: 3447415420596926888}
   m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0d7b068b5624ba145bd4d4e43993bd8b, type: 3}
@@ -130,3 +116,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rpm: 1500
   variation: 500
+--- !u!135 &-2448014667944513354
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3447415420596926888}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 0
+  serializedVersion: 2
+  m_Radius: 1
+  m_Center: {x: 0, y: 0, z: 0}

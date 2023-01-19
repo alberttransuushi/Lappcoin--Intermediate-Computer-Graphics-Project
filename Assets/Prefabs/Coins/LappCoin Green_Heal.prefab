@@ -12,11 +12,11 @@ GameObject:
   - component: {fileID: 8334169730363314158}
   - component: {fileID: 6062891113221207409}
   - component: {fileID: 9163020331774826309}
-  - component: {fileID: 6939532769120967308}
   - component: {fileID: 8758049609146798908}
+  - component: {fileID: 4752392068621052644}
   m_Layer: 0
   m_Name: LappCoin Green_Heal
-  m_TagString: Untagged
+  m_TagString: Coin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -102,20 +102,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 14
   m_CollisionDetection: 0
---- !u!64 &6939532769120967308
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5553878898132839414}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -2432090755550338912, guid: d936b5448ffadc34c8d3b600a74497b2, type: 3}
 --- !u!114 &8758049609146798908
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -130,3 +116,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rpm: 1500
   variation: 500
+--- !u!135 &4752392068621052644
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5553878898132839414}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 0
+  serializedVersion: 2
+  m_Radius: 1
+  m_Center: {x: 0, y: 0, z: 0}
