@@ -6,8 +6,14 @@ blue/teal - riccochet
 purple - void
 black - shadow teleport
 lsd green - time freeze
-rainbow coin - rng thing
+rainbow coin - rng effect
 water - mild damage with big slow
+
+
+other coins that could be added (might be an upgrade)
+kroos coin - arrow rain
+yae coin - multiple lightning strikes
+w coin - stunning explosive
 
 
 
