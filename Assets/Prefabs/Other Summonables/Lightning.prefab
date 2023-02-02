@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3203842247080168244}
+  - component: {fileID: 7658402705070553076}
   m_Layer: 0
   m_Name: Lightning
   m_TagString: Untagged
@@ -32,6 +33,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7658402705070553076
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6327672462432085933}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1927ba707fda03148b2cf7025b634a48, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &6438466158472799762
 GameObject:
   m_ObjectHideFlags: 0
@@ -44,6 +57,7 @@ GameObject:
   - component: {fileID: 1880326264241713697}
   - component: {fileID: 2542892613193618716}
   - component: {fileID: 506850960282828665}
+  - component: {fileID: 3577149741606277429}
   m_Layer: 0
   m_Name: Cylinder
   m_TagString: Untagged
@@ -124,9 +138,22 @@ CapsuleCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6438466158472799762}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   m_Radius: 0.5000001
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
+--- !u!114 &3577149741606277429
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6438466158472799762}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd3a8fe027d7125438a4af33cb967f33, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 10
