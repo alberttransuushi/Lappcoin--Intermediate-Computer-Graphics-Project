@@ -11578,32 +11578,11 @@ Mesh:
     offset: 0
     size: 0
     path: 
---- !u!1 &1503276634 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 9203945758422689274, guid: 52867fac28578a34aaa7e3a5b85528db, type: 3}
-  m_PrefabInstance: {fileID: 1741476144}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1508374422 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 9203945758422689278, guid: 52867fac28578a34aaa7e3a5b85528db, type: 3}
   m_PrefabInstance: {fileID: 1741476144}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1508374431
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1503276634}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1126b982cd9ff744e9bcb99a95cc8aa5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  scaleUpTime: 1
-  upTime: 1
-  scaleDownTime: 1
-  material: {fileID: 2100000, guid: 6fb46c89dc1647a46936cf2ec6b90d95, type: 2}
 --- !u!850595691 &1513132941
 LightingSettings:
   m_ObjectHideFlags: 0
@@ -11698,10 +11677,6 @@ PrefabInstance:
       propertyPath: m_LookAt
       value: 
       objectReference: {fileID: 1508374422}
-    - target: {fileID: 9203945758422689264, guid: 52867fac28578a34aaa7e3a5b85528db, type: 3}
-      propertyPath: m_Mass
-      value: 5
-      objectReference: {fileID: 0}
     - target: {fileID: 9203945758422689274, guid: 52867fac28578a34aaa7e3a5b85528db, type: 3}
       propertyPath: m_Name
       value: Player
@@ -11749,10 +11724,6 @@ PrefabInstance:
     - target: {fileID: 9203945758422689278, guid: 52867fac28578a34aaa7e3a5b85528db, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9203945758422689279, guid: 52867fac28578a34aaa7e3a5b85528db, type: 3}
-      propertyPath: jumpForce
-      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 9203945758422689279, guid: 52867fac28578a34aaa7e3a5b85528db, type: 3}
       propertyPath: isGroundedScript
