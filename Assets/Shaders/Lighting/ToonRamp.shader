@@ -4,8 +4,6 @@ Shader "Custom/ToonRamp"
     {
         _MainTex("Main Texture", 2D) = "white" {}
         _RampTex ("Ramp Texture", 2D) = "white" {}
-        _RotationSpeed("Rotation Speed", Float) = 2.0
-        _RotationDegrees("Rotation Degrees", Float) = 0.0
     }
         SubShader
     {
