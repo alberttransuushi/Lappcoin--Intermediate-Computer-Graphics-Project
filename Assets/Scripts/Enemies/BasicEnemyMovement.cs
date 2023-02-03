@@ -22,7 +22,8 @@ public class BasicEnemyMovement : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            UnityEditor.EditorApplication.isPlaying = false;
+            //UnityEditor.EditorApplication.isPlaying = false;
+            Application.Quit();
         }
     }
 }
