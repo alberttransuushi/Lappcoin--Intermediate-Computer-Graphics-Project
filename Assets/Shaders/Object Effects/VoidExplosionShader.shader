@@ -1,4 +1,4 @@
-Shader "Custom/WaterShader"
+Shader "Custom/VoidExplosionShader"
 {
     Properties
     {
@@ -61,7 +61,7 @@ Shader "Custom/WaterShader"
             float4 _RimColor;
             void surf(Input IN, inout SurfaceOutput o)
             {
-                half rim = 1.0 - saturate(dot(normalize(IN.viewDir), o.Normal));
+                half rim = saturate(dot(normalize(IN.viewDir), o.Normal));
                 half4 c = tex2D(_MainTex, IN.uv_MainTex);
                 //o.Albedo = tex2D(_MainTex, IN.uv_MainTex).rgb;
                 o.Emission = c.rgb * pow(rim, _RimPower) * 10;
