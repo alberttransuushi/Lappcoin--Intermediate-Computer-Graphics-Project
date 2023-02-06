@@ -6,6 +6,7 @@ Shader "Custom/RimLighting"
 	}
 
 	SubShader{
+		Tags {"Queue" = "Geometry"}
 		CGPROGRAM
 		#pragma surface surf Lambert
 			struct Input {
@@ -16,10 +17,8 @@ Shader "Custom/RimLighting"
 		float _RimPower;
 
 		void surf(Input IN, inout SurfaceOutput o) {
-			half rim = dot(normalize(IN.viewDir), o.Normal);
-			//half rim = 1.0 - saturate(dot (normalize(IN.viewDIR), o.normal));
-			o.Emission = _RimColor.rgb * rim;
-			//o.Emission = _RimColor.rgb * pow (rim, _RimPower);
+			half rim = 1 - saturate(dot(normalize(IN.viewDir), o.Normal));
+			o.Emission = _RimColor.rgb * pow (rim, _RimPower) * 10;
 		}
 	  ENDCG
 	}
