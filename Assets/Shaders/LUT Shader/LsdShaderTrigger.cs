@@ -13,8 +13,9 @@ public class LsdShaderTrigger : MonoBehaviour
   bool isUp;
   bool scaleDown;
   public Material material;
+  bool freeze;
   private void Update() {
-    if (Input.GetKeyDown(KeyCode.E) && !triggered) {
+    if (freeze && !triggered) {
       triggered = true;
       scaleUp = true;
       timer = 0;
@@ -38,6 +39,7 @@ public class LsdShaderTrigger : MonoBehaviour
       timer = 0;
       scaleDown = false;
       triggered = false;
+      freeze = false;
     }
     if (scaleUp) {
       material.SetFloat("_Contribution", timer / scaleUpTime);
@@ -48,5 +50,9 @@ public class LsdShaderTrigger : MonoBehaviour
     if (scaleDown) {
       material.SetFloat("_Contribution", (scaleDownTime - timer) / scaleDownTime);
     }
+  }
+  public void TriggerLSD(float time) {
+    freeze = true;
+    upTime = time - 2;
   }
 }

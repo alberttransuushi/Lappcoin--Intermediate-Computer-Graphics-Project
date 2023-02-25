@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3203842247080168244}
   - component: {fileID: 7658402705070553076}
+  - component: {fileID: -834950227688310545}
   m_Layer: 0
   m_Name: Lightning
   m_TagString: Untagged
@@ -25,8 +26,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6327672462432085933}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 5, z: 0}
-  m_LocalScale: {x: 2, y: 5, z: 2}
+  m_LocalPosition: {x: 0, y: 1, z: 0}
+  m_LocalScale: {x: 2, y: 1, z: 2}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 5539942042567565996}
@@ -45,6 +46,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1927ba707fda03148b2cf7025b634a48, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &-834950227688310545
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6327672462432085933}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b31e6e0287f6d044881686c160ff2eb2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damagePerSecond: 5
+  enemiesIn: []
 --- !u!1 &6438466158472799762
 GameObject:
   m_ObjectHideFlags: 0

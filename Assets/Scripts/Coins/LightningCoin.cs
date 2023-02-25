@@ -17,7 +17,11 @@ public class LightningCoin : Coin
     }
   }
   public override void HitCoin() {
-    Instantiate(lightning, point, Quaternion.Euler(Vector3.forward));
+    GameObject l = Instantiate(lightning,
+      point + new Vector3(0, (transform.position.y - point.y)/2,0),
+      Quaternion.Euler(Vector3.forward));
+    l.transform.localScale = new Vector3(l.transform.localScale.x, (transform.position.y - point.y) / 2, l.transform.localScale.z);
+    l.GetComponent<DamageOverTime>().SetDamagePerSecond(base.GetDamage() * base.GetDamageScale());
     Destroy(this.gameObject);
   }
 

@@ -2,11 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Heal : Coin
+public class HealCoin : Coin
 {
   public override void HitCoin() {
-    //heal for
-    //base.GetDamage() * base.GetDamageScale());
+    PlayerUtility.GetPlayer().GetComponent<PlayerHealth>().Heal(base.GetDamage() * base.GetDamageScale());
     Destroy(this.gameObject);
   }
 }

@@ -7,24 +7,32 @@ using UnityEngine.SceneManagement;
 public class BasicEnemyMovement : MonoBehaviour {
   NavMeshAgent agent;
   Transform playerTrans;
+  public float baseSpeed;
+  float contactDamage;
+  Collider col;
   void Start() {
     agent = GetComponent<NavMeshAgent>();
-    playerTrans = GameObject.FindWithTag("Player").transform;
+    playerTrans = PlayerUtility.GetPlayer().transform;
+    contactDamage = EnemyUtility.GetEnemyDamage();
+    col = GetComponent<Collider>();
+    
   }
   private void Update() {
     agent.destination = playerTrans.position;
+    if (EnemyUtility.IsEnemyFrozen()) {
+      col.enabled = false;
+      agent.speed = 0;
+    } else {
+      col.enabled = true;
+      agent.speed = baseSpeed;
+    }
   }
 
   private void OnCollisionEnter(Collision collision) {
     if (collision.gameObject.CompareTag("Player")) {
       //UnityEditor.EditorApplication.isPlaying = false;
-      Application.Quit();
+      collision.gameObject.GetComponent<PlayerHealth>().Damage(contactDamage);
     }
   }
-  private void OnTriggerEnter(Collider other) {
-    if (other.CompareTag("Player")) {
-      //UnityEditor.EditorApplication.isPlaying = false;
-      Application.Quit();
-    }
-  }
+
 }

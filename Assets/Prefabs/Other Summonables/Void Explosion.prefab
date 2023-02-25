@@ -13,7 +13,6 @@ GameObject:
   - component: {fileID: 3374389569258544417}
   - component: {fileID: 8710840222488835829}
   - component: {fileID: 5779079200969482299}
-  - component: {fileID: -2856377376473214534}
   m_Layer: 0
   m_Name: Void Explosion
   m_TagString: Untagged
@@ -113,16 +112,3 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scale: 0
   explosionTime: 2
---- !u!114 &-2856377376473214534
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1012999548736612388}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dd3a8fe027d7125438a4af33cb967f33, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damage: 10

@@ -12,8 +12,8 @@ GameObject:
   - component: {fileID: 5631814679332110109}
   - component: {fileID: 2140606259218372570}
   - component: {fileID: 3160240549750882104}
-  - component: {fileID: 2333494185044546002}
   - component: {fileID: 8799550325732446608}
+  - component: {fileID: 2333494185044546002}
   - component: {fileID: -5887017906813910761}
   m_Layer: 0
   m_Name: LappCoin Yellow_Lightning
@@ -103,6 +103,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 14
   m_CollisionDetection: 0
+--- !u!135 &8799550325732446608
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8043822525059221740}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 0
+  serializedVersion: 2
+  m_Radius: 1.5
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &2333494185044546002
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -117,19 +130,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rpm: 1500
   variation: 500
---- !u!135 &8799550325732446608
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8043822525059221740}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  serializedVersion: 2
-  m_Radius: 1.5
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &-5887017906813910761
 MonoBehaviour:
   m_ObjectHideFlags: 0

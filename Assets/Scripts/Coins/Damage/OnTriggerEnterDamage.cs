@@ -8,4 +8,7 @@ public class OnTriggerEnterDamage : MonoBehaviour
   private void OnTriggerEnter(Collider other) {
     if (other.tag == "Enemy") other.GetComponent<BasicEnemyHealth>().health -= damage;
   }
+  private void OnTriggerStay(Collider other) {
+    
+  }
 }
