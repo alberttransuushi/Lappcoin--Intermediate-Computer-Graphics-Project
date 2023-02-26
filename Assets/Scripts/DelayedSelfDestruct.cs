@@ -10,4 +10,7 @@ public class DelayedSelfDestruct : MonoBehaviour
     timer += Time.deltaTime;
     if (timer > duration) Destroy(this.gameObject);
   }
+  public void SetDuration(float time) {
+    duration = time;
+  }
 }

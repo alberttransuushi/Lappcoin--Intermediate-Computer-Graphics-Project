@@ -9,13 +9,16 @@ public class Explosion : MonoBehaviour
 
   float timer;
   [SerializeField] float explosionTime;
+  private void Awake() {
+    GetComponent<OnTriggerEnterDamage>().damage = damage;
+  }
 
   private void Update() {
     timer += Time.deltaTime;
     if (timer > explosionTime) {
       Destroy(this.gameObject);
     }
-    transform.localScale = new Vector3(explosionRadius * (timer / explosionTime), explosionRadius * (timer / explosionTime), explosionRadius * (timer / explosionTime));
+    transform.localScale = Vector3.one * explosionRadius;
   }
   public void SetExplosionRadius(float radius) {
     explosionRadius = radius;

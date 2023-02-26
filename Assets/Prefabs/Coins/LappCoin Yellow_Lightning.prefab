@@ -142,9 +142,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 85e2c805fe8f19b4f90e6bda3ce79671, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 0
-  damageScale: 0
-  lightning: {fileID: 6327672462432085933, guid: f951c3b78fcb0ea45b17c6af18f4af1d, type: 3}
+  damage: 5
+  damageScale: 1
+  lightning: {fileID: 7473534459922097112, guid: 4973a8079109f164d9e48d74fb6eb66a, type: 3}
   layermask:
     serializedVersion: 2
     m_Bits: 256
+  duration: 3

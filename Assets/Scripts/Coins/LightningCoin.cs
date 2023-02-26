@@ -6,6 +6,7 @@ public class LightningCoin : Coin
 {
   [SerializeField] GameObject lightning;
   [SerializeField] private LayerMask layermask;
+  [SerializeField] float duration;
 
   Vector3 point;
   private void Update() {
@@ -22,6 +23,8 @@ public class LightningCoin : Coin
       Quaternion.Euler(Vector3.forward));
     l.transform.localScale = new Vector3(l.transform.localScale.x, (transform.position.y - point.y) / 2, l.transform.localScale.z);
     l.GetComponent<DamageOverTime>().SetDamagePerSecond(base.GetDamage() * base.GetDamageScale());
+    l.GetComponent<DelayedSelfDestruct>().SetDuration(duration);
+
     Destroy(this.gameObject);
   }
 
