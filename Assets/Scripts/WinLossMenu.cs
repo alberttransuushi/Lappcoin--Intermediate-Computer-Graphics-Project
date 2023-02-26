@@ -11,8 +11,12 @@ public class WinLossMenu : MonoBehaviour {
   bool endLocked = false;
   bool triggered;
   private void Update() {
+    if (PlayerUtility.GetPlayer().transform.position.y < -10 && !endLocked && !triggered) {
+      items[0].GetComponent<Text>().text = "YOU LOST";
+      endLocked = true;
+    }
     if (loss && !endLocked && !triggered) {
-      items[0].GetComponent<Text>().text = "YOU LOSS";
+      items[0].GetComponent<Text>().text = "YOU LOST";
       endLocked = true;
     }
     if (EnemyUtility.GetKills() >= killsToWin && !endLocked && !triggered) {
