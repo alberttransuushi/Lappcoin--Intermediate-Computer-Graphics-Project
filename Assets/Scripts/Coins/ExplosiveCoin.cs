@@ -11,6 +11,7 @@ public class ExplosiveCoin : Coin
   public override void HitCoin() {
     GameObject explosionObj = Instantiate(explosion, transform.position, transform.rotation); 
     explosionObj.GetComponent<Explosion>().SetExplosionRadius(explosionRadius * explosionRadiusScale);
+    explosionObj.GetComponent<OnTriggerEnterDamage>().damage = base.GetDamage() * base.GetDamageScale();
     explosionObj.GetComponent<Explosion>().SetDamage(base.GetDamage() * base.GetDamageScale());
     Destroy(this.gameObject);
   }

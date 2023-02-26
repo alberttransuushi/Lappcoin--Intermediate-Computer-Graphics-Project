@@ -39,7 +39,7 @@ public class WinLossMenu : MonoBehaviour {
     }
 
     EnemyUtility.AddKills(-EnemyUtility.GetKills());
-    EnemyUtility.AddEnemy(EnemyUtility.GetEnemyCount());
+    EnemyUtility.AddEnemy(-EnemyUtility.GetEnemyCount());
 
     SceneManager.LoadScene(scene);
 
