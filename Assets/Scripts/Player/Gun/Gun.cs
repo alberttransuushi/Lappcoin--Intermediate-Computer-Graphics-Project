@@ -25,7 +25,7 @@ public class Gun : MonoBehaviour
     RaycastHit hit;
 
     if (Physics.Raycast(ray, out hit, Mathf.Infinity)) {
-      DrawLine(ray.origin, hit.point, Color.red, 0.1f, 2f);
+      //DrawLine(ray.origin, hit.point, Color.red, 0.1f, 2f);
       DrawLine(gunTip.transform.position, hit.point, Color.blue, 0.1f, 2f);
       if (hit.collider.gameObject.tag == "Coin") {
         hit.collider.transform.GetComponent<Coin>().HitCoin();

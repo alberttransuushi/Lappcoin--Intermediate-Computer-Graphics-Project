@@ -7,15 +7,21 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Explosion
-  m_Shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
-  m_ValidKeywords: []
+  m_Name: GunBullet
+  m_Shader: {fileID: 210, guid: 0000000000000000f000000000000000, type: 0}
+  m_ValidKeywords:
+  - EFFECT_BUMP
+  - _ALPHAPREMULTIPLY_ON
+  - _EMISSION
+  - _FADING_ON
+  - _METALLICGLOSSMAP
   m_InvalidKeywords: []
-  m_LightmapFlags: 4
+  m_LightmapFlags: 0
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
+  m_CustomRenderQueue: 3000
+  stringTagMap:
+    RenderType: Transparent
   disabledShaderPasses: []
   m_SavedProperties:
     serializedVersion: 3
@@ -36,24 +42,16 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
-    - _DisplacementMap:
-        m_Texture: {fileID: 2800000, guid: 69e91670b7ef94744940e705ff7ce7d4, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
     - _EmissionMap:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
+        m_Texture: {fileID: 2800000, guid: 8f89de1358e49a342817ff6774d43daa, type: 3}
+        m_Scale: {x: 1000, y: 1000}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: c56fcd8cd7a03fb458ec2bc4b43bd246, type: 3}
-        m_Scale: {x: 1, y: 1}
+        m_Texture: {fileID: 2800000, guid: 8f89de1358e49a342817ff6774d43daa, type: 3}
+        m_Scale: {x: 1000, y: 1000}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _NormalMap:
-        m_Texture: {fileID: 2800000, guid: a197fc3b45bb7a04b9b11d6c323fb2eb, type: 3}
+        m_Texture: {fileID: 2800000, guid: 8f89de1358e49a342817ff6774d43daa, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _OcclusionMap:
@@ -66,31 +64,42 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
+    - _BlendOp: 0
     - _BumpScale: 1
-    - _Cutoff: 0.5
+    - _CameraFadingEnabled: 1
+    - _CameraFarFadeDistance: 2
+    - _CameraNearFadeDistance: 10
+    - _ColorMode: 0
+    - _Cull: 2
+    - _Cutoff: 1
     - _DetailNormalMapScale: 1
-    - _DisplacmentStrength: 0.5
-    - _DstBlend: 0
-    - _ExplosionDegrees: 1000
-    - _ExplosionSpeed: 100
-    - _Freq: 1
+    - _DistortionBlend: 1
+    - _DistortionEnabled: 1
+    - _DistortionStrength: 1000
+    - _DistortionStrengthScaled: 100
+    - _DstBlend: 10
+    - _EmissionEnabled: 1
+    - _FlipbookMode: 0
     - _GlossMapScale: 1
-    - _Glossiness: 0.5
+    - _Glossiness: 1
     - _GlossyReflections: 1
-    - _Metallic: 0
-    - _Mode: 0
+    - _LightingEnabled: 1
+    - _Metallic: 1
+    - _Mode: 3
     - _OcclusionStrength: 1
     - _Parallax: 0.02
-    - _RotationDegrees: 10
-    - _RotationSpeed: 10
     - _SmoothnessTextureChannel: 0
+    - _SoftParticlesEnabled: 1
+    - _SoftParticlesFarFadeDistance: 5
+    - _SoftParticlesNearFadeDistance: 5
     - _SpecularHighlights: 1
     - _SrcBlend: 1
-    - _Steepness: 1
     - _UVSec: 0
-    - _ZWrite: 1
+    - _ZWrite: 0
     m_Colors:
-    - _Color: {r: 1, g: 0.96923625, b: 0.8537736, a: 1}
-    - _Direction: {r: 1, g: 1, b: 1, a: 1}
-    - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+    - _CameraFadeParams: {r: 10, g: -0.125, b: 0, a: 0}
+    - _Color: {r: 1, g: 0.90202916, b: 0, a: 1}
+    - _ColorAddSubDiff: {r: 0, g: 0, b: 0, a: 0}
+    - _EmissionColor: {r: 2, g: 1.4379556, b: 0.25130892, a: 1}
+    - _SoftParticleFadeParams: {r: 5, g: Infinity, b: 0, a: 0}
   m_BuildTextureStacks: []
