@@ -28,8 +28,8 @@ public static class EnemyUtility
   public static int GetEnemyLimit() {
     return enemyLimit;
   }
-  public static void IncreaseEnemyHealth(int h) {
-    enemyHealth += h;
+  public static void SetEnemyHealth(int h) {
+    enemyHealth = h;
   }
   public static float GetHealth() {
     return enemyHealth;
