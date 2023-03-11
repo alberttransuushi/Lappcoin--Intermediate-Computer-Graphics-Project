@@ -13,11 +13,7 @@ public class PlayerExperienceTracker : MonoBehaviour
   }
   private void Update() {
     if (playerExp >= neededExpForLevelUp) {
-      playerExp -= neededExpForLevelUp;
-      //INSERT LEVEL UP CODE HERE
-
-      playerLevel += 1;
-      CalculateLevelExperienceNeeded();
+      LevelUp();
     }
   }
   void CalculateLevelExperienceNeeded() {
@@ -30,6 +26,10 @@ public class PlayerExperienceTracker : MonoBehaviour
     playerExp += exp;
   }
   private void LevelUp() {
+    playerExp -= neededExpForLevelUp;
+    playerLevel += 1;
+    //INSERT UI CODE HERE
 
+    CalculateLevelExperienceNeeded();
   }
 }
