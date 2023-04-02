@@ -8,6 +8,7 @@ Shader "Custom/DisplacementTest"
         _RotationDegrees("Rotation Degrees", Float) = 0.0
         _DisplacementMap("DisMapInYouMouth", 2D) = "black" {}
         _DisplacmentStrength("DisStronkness", Range(0,100)) = 0.5
+        _TimeShift("Time Shift", Range(0,100)) = 0.0
     }
         SubShader
         {
@@ -25,6 +26,7 @@ Shader "Custom/DisplacementTest"
             sampler2D _MainTex;
             sampler2D _DisplacementMap;
             half _DisplacmentStrength;
+            float _TimeShift;
             float _RotationSpeed;
             float4 _MainTex_ST;
             float4 _DisplacmentMap_ST;
@@ -48,8 +50,8 @@ Shader "Custom/DisplacementTest"
                 o.uv = TRANSFORM_TEX(v.uv, _MainTex);
 
                 o.uv.xy -= 0.5;
-                float s = sin(_RotationSpeed * _Time) * 0.4;
-                float c = cos(_RotationSpeed * _Time);
+                float s = sin(_TimeShift);
+                float c = cos(_TimeShift);
                 float2x2 rotationMatrix = float2x2(c, -s, s, c);
                 rotationMatrix *= 0.5;
                 rotationMatrix += 0.5;
