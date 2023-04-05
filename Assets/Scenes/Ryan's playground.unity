@@ -44924,12 +44924,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7c9ebc214b0141c6a6ecf1e7443f3f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bloomShader: {fileID: 4800000, guid: 926e8db920ab84661b115e2bdbc8199b, type: 3}
+  bloomShader: {fileID: 4800000, guid: 65567d549828b174b99b64d3bb6e56e5, type: 3}
   intensity: 1
   iterations: 16
   threshold: 1
   softThreshold: 0.5
   debug: 0
+  color: {r: 0, g: 0.6511247, b: 1, a: 0}
 --- !u!114 &1602777073
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -44943,7 +44944,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_pixelateMaterial: {fileID: 2100000, guid: 2f8aff9f1184ad84da9befca0138d8e1, type: 2}
-  pixelDensity: 350
+  pixelDensity: 100
 --- !u!114 &1602777074
 MonoBehaviour:
   m_ObjectHideFlags: 0

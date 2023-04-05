@@ -2,7 +2,8 @@
 using System;
 
 [ExecuteInEditMode, ImageEffectAllowedInSceneView]
-public class BloomEffect : MonoBehaviour {
+public class BloomEffect : MonoBehaviour
+{
 
 	const int BoxDownPrefilterPass = 0;
 	const int BoxDownPass = 1;
@@ -26,16 +27,21 @@ public class BloomEffect : MonoBehaviour {
 
 	public bool debug;
 
+	public Color color;
+
 	RenderTexture[] textures = new RenderTexture[16];
 
 	[NonSerialized]
 	Material bloom;
 
-	void OnRenderImage (RenderTexture source, RenderTexture destination) {
-		if (bloom == null) {
+	void OnRenderImage(RenderTexture source, RenderTexture destination)
+	{
+		if (bloom == null)
+		{
 			bloom = new Material(bloomShader);
 			bloom.hideFlags = HideFlags.HideAndDontSave;
 		}
+		bloom.color = color;
 
 		float knee = threshold * softThreshold;
 		Vector4 filter;
@@ -56,10 +62,12 @@ public class BloomEffect : MonoBehaviour {
 		RenderTexture currentSource = currentDestination;
 
 		int i = 1;
-		for (; i < iterations; i++) {
+		for (; i < iterations; i++)
+		{
 			width /= 2;
 			height /= 2;
-			if (height < 2) {
+			if (height < 2)
+			{
 				break;
 			}
 			currentDestination = textures[i] =
@@ -68,7 +76,8 @@ public class BloomEffect : MonoBehaviour {
 			currentSource = currentDestination;
 		}
 
-		for (i -= 2; i >= 0; i--) {
+		for (i -= 2; i >= 0; i--)
+		{
 			currentDestination = textures[i];
 			textures[i] = null;
 			Graphics.Blit(currentSource, currentDestination, bloom, BoxUpPass);
@@ -76,10 +85,12 @@ public class BloomEffect : MonoBehaviour {
 			currentSource = currentDestination;
 		}
 
-		if (debug) {
+		if (debug)
+		{
 			Graphics.Blit(currentSource, destination, bloom, DebugBloomPass);
 		}
-		else {
+		else
+		{
 			bloom.SetTexture("_SourceTex", source);
 			Graphics.Blit(currentSource, destination, bloom, ApplyBloomPass);
 		}
