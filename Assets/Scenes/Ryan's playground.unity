@@ -44944,7 +44944,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_pixelateMaterial: {fileID: 2100000, guid: 2f8aff9f1184ad84da9befca0138d8e1, type: 2}
-  pixelDensity: 100
+  pixelDensity: 256
 --- !u!114 &1602777074
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -46211,6 +46211,22 @@ PrefabInstance:
     - target: {fileID: 9203945758422689279, guid: 52867fac28578a34aaa7e3a5b85528db, type: 3}
       propertyPath: isGroundedScript
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 9203945759341265110, guid: 52867fac28578a34aaa7e3a5b85528db, type: 3}
+      propertyPath: m_VerticalAxis.m_MaxSpeed
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9203945759341265110, guid: 52867fac28578a34aaa7e3a5b85528db, type: 3}
+      propertyPath: m_VerticalAxis.m_SpeedMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9203945759341265110, guid: 52867fac28578a34aaa7e3a5b85528db, type: 3}
+      propertyPath: m_HorizontalAxis.m_MaxSpeed
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9203945759341265110, guid: 52867fac28578a34aaa7e3a5b85528db, type: 3}
+      propertyPath: m_HorizontalAxis.m_SpeedMode
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9203945760057080277, guid: 52867fac28578a34aaa7e3a5b85528db, type: 3}
       propertyPath: m_LocalPosition.x
